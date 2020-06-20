@@ -38,6 +38,7 @@ namespace Plugin
 
                     try
                     {
+                        tracingService.Trace("test");
                         OptionSetValue option = new OptionSetValue(6);
                         tracingService.Trace("account name " + account.Attributes["name"]);
                         tracingService.Trace("option field: " + ((OptionSetValue)account.Attributes["customertypecode"]).Value);
